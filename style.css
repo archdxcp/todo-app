@@ -1,0 +1,213 @@
+body {
+    font-family: sans-serif;
+    background: #f5f5f5;
+    padding: 40px;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  #todoInput {
+    width: 70%;
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  #addBtn {
+    padding: 10px 16px;
+    font-size: 16px;
+    margin-left: 8px;
+    cursor: pointer;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+  }
+  
+  li {
+    background: white;
+    padding: 10px;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .delete-btn {
+    background: red;
+    color: white;
+    border: none;
+    padding: 4px 8px;
+    cursor: pointer;
+  }
+  .done {
+    text-decoration: line-through;
+    color: gray;
+  }
+  
+  #todoList {
+    list-style: none;
+    padding: 0;
+    max-width: 400px;
+    margin: 20px auto;
+  }
+  
+  #todoList li {
+    background: #fff;
+    padding: 10px 12px;
+    margin-bottom: 8px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: grab;
+  }
+  
+  #todoList li.dragging {
+    opacity: 0.5;
+  }
+  
+  #todoList li.done span {
+    text-decoration: line-through;
+    color: #aaa;
+  }
+  
+  .delete-btn {
+    background: #ff4d4f;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    padding: 4px 8px;
+    cursor: pointer;
+  }
+  
+  .delete-btn:hover {
+    opacity: 0.8;
+  }
+  .filter-btn {
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    background: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .filter-btn.active {
+    background: #2563eb;
+    color: #fff;
+    border-color: #2563eb;
+  }
+  body.dark {
+    background: #111827;
+    color: #e5e7eb;
+  }
+  
+  body.dark #todoList li {
+    background: #1f2933;
+  }
+  
+  body.dark .filter-btn {
+    background: #1f2933;
+    color: #e5e7eb;
+    border-color: #374151;
+  }
+  
+  body.dark .filter-btn.active {
+    background: #3b82f6;
+  }
+  
+  .dark-toggle {
+    font-size: 20px;
+    padding: 6px 10px;
+    cursor: pointer;
+    background: none;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-left: 10px;
+    color: #333;   /* ← これを追加 */
+  }
+  body.dark .dark-toggle {
+    color: #e5e7eb;
+    border-color: #555;
+  }
+  body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    background: #f7f7f7;
+  }
+  
+  .container {
+    max-width: 640px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  }
+  h1 {
+    text-align: center;
+    margin-bottom: 24px;
+    font-size: 24px;
+  }
+  .input-area {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 16px;
+  }
+  
+  input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+  }
+  
+  button.add {
+    padding: 10px 16px;
+    border-radius: 8px;
+    border: none;
+    background: #4f46e5;
+    color: white;
+  }
+  .filters {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .filters button {
+    padding: 6px 12px;
+    border-radius: 999px;
+    border: 1px solid #ddd;
+    background: white;
+  }
+  
+  .filters button.active {
+    background: #4f46e5;
+    color: white;
+    border-color: #4f46e5;
+  }
+  .todo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 12px;
+    border-radius: 8px;
+    background: #f9f9f9;
+    margin-bottom: 8px;
+  }
+  
+  .todo.completed span {
+    text-decoration: line-through;
+    color: #999;
+  }
+  .todo button {
+    background: #ef4444;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 4px 8px;
+    font-size: 12px;
+  }
